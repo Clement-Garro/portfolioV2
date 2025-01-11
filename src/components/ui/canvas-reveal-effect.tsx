@@ -1,9 +1,9 @@
 "use client";
 import {cn} from "@/lib/utils";
-import {Canvas, extend, useFrame, useThree} from "@react-three/fiber";
-import React, {useMemo, useRef} from "react";
 import * as THREE from 'three'
 import {Mesh, PlaneGeometry} from 'three'
+import {Canvas, extend, useFrame, useThree} from '@react-three/fiber'
+import React, {useMemo, useRef} from 'react'
 
 extend({Mesh, PlaneGeometry})
 
@@ -279,6 +279,7 @@ const ShaderMaterial = ({
     return materialObject;
   }, [size.width, size.height, source]);
 
+  // @ts-ignore
   return (
     <mesh ref={ref}>
       <planeGeometry args={[2, 2]}/>
