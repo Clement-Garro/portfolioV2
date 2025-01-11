@@ -11,13 +11,12 @@ export default function Projects() {
           const gridCols =
             projectCount === 1
               ? "grid-cols-1"
-              : projectCount === 2
-                ? "grid-cols-1 md:grid-cols-2"
-                : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+              : "grid-cols-1 md:grid-cols-2"
 
           return (
             <div key={category}>
-              <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-center mb-12 capitalize">
+              <h2
+                className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-center mb-12 capitalize py-20">
                 {category}
               </h2>
               <div className={`grid ${gridCols} gap-6 justify-center`}>

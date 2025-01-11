@@ -25,6 +25,9 @@ export default function ProjectPage({params}: { params: { id: string } }) {
 
   const githubLink = isValidUrl(project.github) ? project.github : null;
   const liveLink = project.live && isValidUrl(project.live) ? project.live : null;
+  const apiLiveLink = project.apiLive && isValidUrl(project.apiLive) ? project.apiLive : null;
+  const nbContributors = project.contributors.length;
+  const textContributors = project.contributors.map((contributor) => contributor).join(', ');
 
   return (
     <div className="container mx-auto px-4 py-8 flex flex-col">
@@ -34,6 +37,14 @@ export default function ProjectPage({params}: { params: { id: string } }) {
       </Link>
       <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
       <p className="text-xl text-gray-600 dark:text-gray-300 mb-6">{project.description}</p>
+      {nbContributors > 0 && (
+        <div className={"flex flex-row gap-4 pb-4"}>
+          <p className="text-gray-600 dark:text-gray-300">Contributors:</p>
+          <div className="flex gap-2">
+            <p className="text-gray-700 dark:text-gray-200">{textContributors}</p>
+          </div>
+        </div>
+      )}
       <div className="flex flex-wrap gap-2 mb-6">
         {project.tags.map((tag, index) => (
           <Badge key={index} variant={tag.toLowerCase().replace(' ', '') as never}>{tag}</Badge>
@@ -69,6 +80,14 @@ export default function ProjectPage({params}: { params: { id: string } }) {
             <a href={liveLink} target="_blank" rel="noopener noreferrer">
               <ExternalLink className="mr-2 h-4 w-4"/>
               Live Demo
+            </a>
+          </Button>
+        )}
+        {apiLiveLink && (
+          <Button asChild variant="outline">
+            <a href={apiLiveLink} target="_blank" rel="noopener noreferrer">
+              <ExternalLink className="mr-2 h-4 w-4"/>
+              Frontend API
             </a>
           </Button>
         )}
