@@ -6,8 +6,8 @@ import {GeistSans} from "geist/font/sans";
 import {Footer} from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: 'John Doe - Fullstack Java Developer',
-  description: 'Portfolio of John Doe, a Fullstack Java Developer specializing in Spring Boot, React, and cloud technologies.',
+  title: 'Clément Garro - Fullstack Java Developer',
+  description: 'Portfolio of Clément Garro, a Fullstack Java Developer',
 }
 export default function RootLayout({
                                      children,

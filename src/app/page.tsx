@@ -4,8 +4,8 @@ import Skills from '@/components/skills'
 import {TimelineFormation} from "@/components/TimelineFormation";
 
 export const metadata: Metadata = {
-  title: 'John Doe - Fullstack Java Developer',
-  description: 'Portfolio of John Doe, a Fullstack Java Developer specializing in Spring Boot, React, and cloud technologies.',
+  title: 'Clément Garro - Fullstack Java Developer',
+  description: 'Portfolio of Clément Garro, a Fullstack Java Developer',
 }
 
 export default function Home() {

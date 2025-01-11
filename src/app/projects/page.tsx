@@ -2,8 +2,8 @@ import {Metadata} from 'next'
 import Projects from '@/components/projects'
 
 export const metadata: Metadata = {
-  title: 'Projects | John Doe - Fullstack Java Developer',
-  description: 'Explore the projects of John Doe, a Fullstack Java Developer specializing in Spring Boot, React, and cloud technologies.',
+  title: 'Project | Clement Garro - Fullstack Java Developer',
+  description: 'Explore the projects of Clément Garro, a Fullstack Java Developer',
 }
 
 export default function ProjectsPage() {

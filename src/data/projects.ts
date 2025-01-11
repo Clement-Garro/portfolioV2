@@ -87,7 +87,7 @@ export const projectsData: {
       description: "La où tous mes projets sont regroupés.",
       longDescription: "Portfolio est une application web développée pour présenter mes projets personnels, vous vous y trouvez actuellement. L'application permet de découvrir mes réalisations, mes compétences et mes expériences professionnelles. Elle me permet aussi de tester de nouvelles technologies et de mettre en pratique mes connaissances en développement web. L'application est conçue pour être évolutive et maintenable, facilitant son intégration dans mon parcours professionnel.",
       tags: ["next", "ts", "shadcn", "tailwindcss", "react", "git"],
-      github: "https://github.com/Clement-Garro",
+      github: "https://github.com/Clement-Garro/portfolioV2",
       live: "https://clementgarro.com",
       videoSrc: "/grosCaillouQuiTombe.mp4",
       features: [
@@ -104,7 +104,7 @@ export const projectsData: {
       description: "Un bot Discord pour suivre les annonces Vinted et traquer les bonnes affaires.",
       longDescription: "Bot Vinted est un bot Discord développé pour suivre les annonces Vinted et traquer les bonnes affaires. Il génère des comptes afin de les utiliser pour effectuer des recherches sur Vinted, car l'API n'est pas publique, permettant ainsi aux utilisateurs de trouver rapidement les articles qui les intéressent. Le bot offre plusieurs services, tels qu'un système d'embed pour intégrer les messages dans un webhook Discord, ainsi qu'un système de filtrage avancé pour trier les dernières offres. Ce bot me permettait de trouver rapidement des offres Vinted susceptibles de m'intéresser, afin de les acheter pour les revendre à un meilleur prix.",
       tags: ["python", "api", "discord", "vinted", "webhook", "vite"],
-      github: "https://github.com/Clement-Garro",
+      github: "",
       live: "https://clementgarro.com",
       videoSrc: "/grosCaillouQuiTombe.mp4",
       features: [
@@ -121,7 +121,7 @@ export const projectsData: {
       description: "Un bot telegram permettant d'automatiser un trade crypto.",
       longDescription: "Proto Trader Bot est un bot Telegram qui permet d'automatiser les trades de crypto-monnaies. Ce bot possède une interface permettant de suivre l'avancée des trades que l'on a mis en place, ainsi qu'un tableau de contrôle pour pouvoir acheter ou vendre la crypto-monnaie ou le token que l'on souhaite. De plus, ce bot permet d'automatiser l'achat de crypto-monnaies en définissant le montant que l'on veut investir par trade pour chaque \"baleine\" que l'on a configurée. Autrement dit, le bot achète automatiquement une quantité de crypto-monnaie que l'une des baleines paramétrées doit acheter. Pour utiliser le bot, il suffit de connecter son portefeuille et de configurer les différents paramètres disponibles, ou sinon de générer son portefeuille crypto en fonction de la chaîne que l'on veut utiliser. Ce bot permet pour l'instant d'utiliser uniquement les chaînes Solana, TRX et Ethereum.",
       tags: ["python", "api", "telegram", "crypto"],
-      github: "https://github.com/ProtoTrader/prototype_trader_bot",
+      github: "",
       live: "",
       videoSrc: "/grosCaillouQuiTombe.mp4",
       features: [
@@ -139,7 +139,7 @@ export const projectsData: {
       description: "Bot python pour trader en cryptomonnaie sur la plateforme FTX, avec des stratégies de trading basé sur du backtesting via les données de binance",
       longDescription: "Trading bot pour FTX est un bot python qui permet de trader en cryptomonnaie sur la plateforme FTX. Il utilise des stratégies de trading basées sur du backtesting via les données de binance pour prendre des décisions de trading. Le bot est conçu pour être facile à utiliser et à configurer, avec des paramètres personnalisables pour chaque stratégie de trading. Il offre également des fonctionnalités avancées telles que la gestion des risques, le suivi des performances et la génération de rapports de trading. Le bot est conçu pour être évolutif et maintenable, facilitant son intégration dans l'infrastructure existante de FTX.",
       tags: ["python", "api", "crypto", "ai", "backtesting"],
-      github: "https://github.com/ProtoTrader/prototype_trader_bot",
+      github: "",
       live: "",
       videoSrc: "/grosCaillouQuiTombe.mp4",
       features: [],
