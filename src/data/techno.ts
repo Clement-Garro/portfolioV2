@@ -29,7 +29,7 @@ export const cardData = [
         name: "C",
         designation: "",
         image:
-          "/img/icons/c.svg"
+          "/img/icons/C.svg"
       },
       {
         id: 5,
@@ -97,7 +97,7 @@ export const cardData = [
         name: "PostgreSQL",
         designation: "",
         image:
-          "/img/icons/postgresql.svg"
+          "/img/icons/postgreSQL.svg"
       },
       {
         id: 10,
