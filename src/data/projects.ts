@@ -28,7 +28,7 @@ export const projectsData: {
       tags: ["Java", "Js", "primefaces", "primeflex", "css", "maven", "docker", "kubernetes"],
       github: "",
       live: "https://facile.cines.fr",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
+      videoSrc: "/img/projectImg/cines/cinesHomeNew.webp",
       features: [
         "Interface utilisateur conviviale et intuitive",
         "Fonctionnalités avancées de recherche et de filtrage",
@@ -50,7 +50,7 @@ export const projectsData: {
       tags: ["next", "ts", "shadcn", "tailwindcss", "react", "git"],
       github: "https://github.com/Clement-Garro/portfolioV2",
       live: "https://clementgarro.com",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
+      videoSrc: "/img/projectImg/portfolio/home.mp4",
       features: [
         "Présentation de mes projets personnels et professionnels",
         "Détails sur mes compétences et expériences",
@@ -68,7 +68,7 @@ export const projectsData: {
       tags: ["python", "api", "discord", "vinted", "webhook", "vite"],
       github: "",
       live: "https://clementgarro.com",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
+      videoSrc: "/img/projectImg/bot/img.png",
       features: [
         "Présentation de mes projets personnels et professionnels",
         "Détails sur mes compétences et expériences",
@@ -86,7 +86,7 @@ export const projectsData: {
       tags: ["python", "api", "telegram", "crypto"],
       github: "",
       live: "",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
+      videoSrc: "/img/projectImg/bot/img.png",
       features: [
         "Automatisation des trades de crypto-monnaies",
         "Interface utilisateur pour suivre les trades en cours",
@@ -105,8 +105,13 @@ export const projectsData: {
       tags: ["python", "api", "crypto", "ai", "backtesting"],
       github: "",
       live: "",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
-      features: [],
+      videoSrc: "/img/projectImg/bot/img.png",
+      features: [
+        "Stratégies de trading basées sur du backtesting",
+        "Paramètres personnalisables pour chaque stratégie",
+        "Gestion des risques et suivi des performances",
+        "Génération de rapports de trading",
+      ],
       contributors: [],
     },
   ],
@@ -120,7 +125,7 @@ export const projectsData: {
       github: "https://github.com/3Guys1Project/Rendu",
       live: "https://webinfo.iutmontp.univ-montp2.fr/~garroc/annuaire/public/",
       apiLive: "https://webinfo.iutmontp.univ-montp2.fr/~garroc/front/",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
+      videoSrc: "/img/projectImg/annuaire/homeHapi.png",
       features: [
         "Conception et développement web",
         "Intégration avec l'API du site des événements",
@@ -139,7 +144,7 @@ export const projectsData: {
       tags: ["php", "js", "api", "figma", "postgresql", "ldap", "tailwindcss", "scrum", "git"],
       github: "",
       live: "",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
+      videoSrc: "/img/projectImg/gradhire/acceuil.webp",
       features: [
         "Mise en œuvre de solutions",
         "Conception de bases de données",
@@ -159,7 +164,7 @@ export const projectsData: {
       tags: ["java", "javafx"],
       github: "https://github.com/Clement-Garro/Aventuriers-du-Rail---Autour-du-Monde-2023",
       live: "",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
+      videoSrc: "/img/projectImg/railihm/start.webp",
       features: [
         "Développement orienté objets",
         "Développement de tests unitaires",
@@ -176,7 +181,7 @@ export const projectsData: {
       tags: ["html", "css", "figma"],
       github: "https://github.com/Clement-Garro/SAE-1.5",
       live: "",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
+      videoSrc: "/img/projectImg/grotte/home.png",
       features: [
         "Conception et structure en HTML",
         "Stylisation et mise en page avec CSS",
@@ -193,7 +198,7 @@ export const projectsData: {
       tags: ["html", "css", "figma"],
       github: "https://github.com/Clement-Garro/SAE-1.6",
       live: "",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
+      videoSrc: "/img/projectImg/controverse/home.png",
       features: [
         "Rédaction d'article web",
         "Élaboration d'architecture de site web",
@@ -211,7 +216,7 @@ export const projectsData: {
       tags: ["UE5", "BluePrint", "3D", "game"],
       github: "https://github.com/Clement-Garro/CGJ2024",
       live: "",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
+      videoSrc: "/img/projectImg/cgj24/img.png",
       features: [
         "Conception de jeu vidéo en 3D",
         "Mécaniques de score et de progression",
@@ -231,8 +236,8 @@ export const projectsData: {
       longDescription: "Pendant la Nuit de l'Info 2022, notre équipe a conçu un site web centré sur la prévention climatique. Notre objectif était de sensibiliser le public aux enjeux environnementaux et de promouvoir des actions concrètes. En combinant nos compétences en conception, développement et rédaction, nous avons créé un site interactif comprenant un serious game engageant, un chatbot répondant aux questions des utilisateurs, ainsi qu'une carte illustrant l'impact des entreprises françaises sur le climat. Cette expérience a été une fusion gratifiante de compétences techniques et d'innovation pour un impact environnemental positif.",
       tags: ["vite", "ts", "react", "tailwindcss", "figma", "git"],
       github: "https://github.com/Clement-Garro/NDI",
-      live: "https://ndi-website.onrender.com/",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
+      live: "",
+      videoSrc: "/img/projectImg/ndi2023/Home.webp",
       features: [
         "Conception et développement web",
         "Intégration d'un serious game",
@@ -250,7 +255,7 @@ export const projectsData: {
       tags: ["unity", "c#", "game"],
       github: "https://github.com/Clement-Garro/Game-jam-2023",
       live: "",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
+      videoSrc: "/img/projectImg/fts/img.png",
       features: [
         "Conception et développement web",
         "COnception graphique",
@@ -267,7 +272,7 @@ export const projectsData: {
       tags: ["php", "js", "tailwindcss", "figma", "git"],
       github: "https://github.com/Clement-Garro/Nuit-de-l-info-2022",
       live: "",
-      videoSrc: "/grosCaillouQuiTombe.mp4",
+      videoSrc: "/img/projectImg/ndi2022/home.mp4",
       features: [
         "Conception et développement web",
         "Conception graphique",
@@ -280,6 +285,6 @@ export const projectsData: {
 }
 
 export function findProjectDataById(id: string): Project | undefined {
-  const allProjects = [...projectsData.professional, ...projectsData.personal, ...projectsData.school];
+  const allProjects = [...projectsData.professional, ...projectsData.personal, ...projectsData.school, ...projectsData.autodidacte];
   return allProjects.find((project) => project.id === id);
 }

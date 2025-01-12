@@ -28,6 +28,10 @@ function isValidUrl(url: string): boolean {
 }
 
 export function ThreeDCard({videoSrc, title, description, linkGit, tags, className, id}: ThreeDCardProps) {
+  const isVideo = videoSrc.includes('.mp4');
+  const isImage = videoSrc.includes('.png') || videoSrc.includes('.jpg') || videoSrc.includes('.jpeg') || videoSrc.includes('.webp');
+  const videoOrImageExist = videoSrc !== "";
+
   return (
     <CardContainer className="inter-var h-full">
       <CardBody
@@ -43,18 +47,33 @@ export function ThreeDCard({videoSrc, title, description, linkGit, tags, classNa
           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300">
           {description}
         </CardItem>
-        <CardItem translateZ="100" className="w-full mt-4">
-          <video
-            src={videoSrc}
-            height="1000"
-            width="1000"
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl pointer-events-none"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
-        </CardItem>
+        {videoOrImageExist && (
+          <>
+            {isVideo && (
+              <CardItem translateZ="100" className="w-full mt-4">
+                <video
+                  src={videoSrc}
+                  height="1000"
+                  width="1000"
+                  className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl pointer-events-none"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              </CardItem>
+            )}
+            {isImage && (
+              <CardItem translateZ="100" className="w-full mt-4">
+                <img
+                  src={videoSrc}
+                  alt={title}
+                  className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl pointer-events-none"
+                />
+              </CardItem>
+            )}
+          </>
+        )}
         <div className="flex flex-wrap mt-4 gap-2">
           {tags.map((tag, index) => (
             <CardItem translateZ={Math.floor(Math.random() * 81) + 30} key={index}>
