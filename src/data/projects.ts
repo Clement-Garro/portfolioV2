@@ -92,7 +92,7 @@ export const projectsData: {
       tags: ["python", "api", "discord", "vinted", "webhook", "vite"],
       github: "",
       live: "",
-      videoSrc: "/img/projectImg/bot/img.png",
+      videoSrc: "/img/projectImg/bot/vinted/img.jpg",
       features: [
         "Présentation de mes projets personnels et professionnels",
         "Détails sur mes compétences et expériences",
@@ -159,7 +159,7 @@ export const projectsData: {
       tags: ["python", "api", "crypto", "ai", "backtesting"],
       github: "",
       live: "",
-      videoSrc: "/img/projectImg/bot/img.png",
+      videoSrc: "/img/projectImg/bot/ftx/img.jpg",
       features: [
         "Stratégies de trading basées sur du backtesting",
         "Paramètres personnalisables pour chaque stratégie",
