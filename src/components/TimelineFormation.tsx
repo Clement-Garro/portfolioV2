@@ -9,7 +9,8 @@ export function TimelineFormation({className}: { className?: string }) {
       title: "2022 - Today",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 items-center">
+          <p
+            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm lg:text-lg font-normal mb-8 items-center">
             En cours - BUT Informatique en 3 ans - Montpellier, France
             Actuellement dans la dernière année de mes études, j'ai acquis beaucoup de connaissances dans le domaine de
             l'informatique.
@@ -67,7 +68,8 @@ export function TimelineFormation({className}: { className?: string }) {
       title: "2019 - 2022",
       content: (
         <div>
-          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-4 items-center">
+          <p
+            className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm lg:text-lg font-normal mb-4 items-center">
             Achèvement d'un Baccalauréat STI2D avec Mention Très Bien et des connaissances en Arduinos, bases de
             données, HTML/CSS, traitement des données et plus au Lycée Thomas Edison
           </p>
