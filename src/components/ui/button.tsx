@@ -17,9 +17,9 @@ const buttonVariants = cva(
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline [transition-timing-function:cubic-bezier(0.12,0,0.39,0)] hover:bg-secondary/80",
+        link: "text-primary underline-offset-4 hover:underline [transition-timing-function:cubic-bezier(0.12,0,0.39,0)] hover:bg-secondary/80 flex",
         blackButton: "bg-black text-white hover:bg-gray-900 hover:bg-opacity-90",
-        sketch: "px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)]"
+        sketch: "px-4 py-2 rounded-md border border-black bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] flex"
       },
       size: {
         default: "h-10 px-4 py-2",

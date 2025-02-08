@@ -18,13 +18,13 @@ export default function About() {
     <main
       className="rounded-md bg-neutral-900 flex flex-col items-center justify-center relative w-full gap-16 gap-y-32 py-32">
 
-      <h1 className={"text-white font-bold text-5xl"}>
+      <h1 className={"text-white font-bold text-5xl flex"}>
         <RandomizedTextEffect text={"Bonjour, Je suis Clément 👋"}/>
       </h1>
 
 
       <p
-        className={"p-10 text-xl relative md:flex-row z-10 md:text-2xl md:leading-tight max-w-5xl mx-auto text-justify tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 via-white to-white items-center gap-2 md:gap-8"}>Étudiant
+        className={"sm:p-10 p-4 text-xl relative md:flex-row z-10 md:text-2xl md:leading-tight max-w-5xl mx-auto text-justify tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 via-white to-white items-center gap-2 md:gap-8"}>Étudiant
         en informatique, <strong>passionné</strong> par la technologie, la culture japonaise,
         les
         jeux vidéo, le
@@ -40,12 +40,12 @@ export default function About() {
       </p>
 
       <h2
-        className="relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">Traits
+        className="sm:p-10 p-4 relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">Traits
         de
         personnalité</h2>
 
       <p
-        className={"p-10 text-xl relative md:flex-row z-10 md:text-2xl md:leading-tight max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 via-white to-white items-center gap-2 md:gap-8 text-justify"}>
+        className={"sm:p-10 p-4 text-xl relative md:flex-row z-10 md:text-2xl md:leading-tight max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 via-white to-white items-center gap-2 md:gap-8 text-justify"}>
         Ma <strong><FlipWords words={words} className={"!text-neutral-200"}/></strong>, permettent de mener mes
         projets
         avec une
@@ -58,12 +58,12 @@ export default function About() {
       </p>
 
       <h2
-        className="relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">
+        className="sm:p-10 p-4 relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">
         Qu’est-ce que j’aime ?
       </h2>
 
       <p
-        className={"p-10 text-xl relative md:flex-row z-10 md:text-2xl md:leading-tight max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 via-white to-white items-center gap-2 md:gap-8 text-justify"}>
+        className={"sm:p-10 p-4 text-xl relative md:flex-row z-10 md:text-2xl md:leading-tight max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 via-white to-white items-center gap-2 md:gap-8 text-justify"}>
         Mon enthousiasme pour la technologie m'a naturellement conduit à explorer l'informatique, que ce soit pour
         <strong>monter mes propres ordinateurs</strong> ou pour <strong>maîtriser plusieurs langages de
         programmation</strong>. En
@@ -88,12 +88,12 @@ export default function About() {
 
 
       <h2
-        className="relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">
+        className="sm:p-10 p-4 relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">
         Quelles sont mes capacités ?
       </h2>
 
       <p
-        className={"p-10 text-xl relative md:flex-row z-10 md:text-2xl md:leading-tight max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 via-white to-white items-center gap-2 md:gap-8 text-justify"}>
+        className={"sm:p-10 p-4 text-xl relative md:flex-row z-10 md:text-2xl md:leading-tight max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 via-white to-white items-center gap-2 md:gap-8 text-justify"}>
         Mes projets personnels et mes études en informatique m'ont permis d'<strong>acquérir différents points de vue et
         une
         vision globale</strong> lors de mes travaux, notamment dans le domaine de la programmation. Lorsque je code,
@@ -118,18 +118,18 @@ export default function About() {
       </p>
 
       <h2
-        className="relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">
+        className="sm:p-10 p-4 relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">
         Objectif actuel</h2>
       <p
-        className={"p-10 text-xl relative md:flex-row z-10 md:text-2xl md:leading-tight max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 via-white to-white items-center gap-2 md:gap-8 text-justify"}>
+        className={"sm:p-10 p-4 text-xl relative md:flex-row z-10 md:text-2xl md:leading-tight max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 via-white to-white items-center gap-2 md:gap-8 text-justify"}>
         Mon objectif actuel est de réussir mon alternance en proposant des solutions correctes et de devenir ingénieur
         en logiciels ou web.</p>
 
       <h2
-        className="relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">
+        className="sm:p-10 p-4 relative flex-col md:flex-row z-10 text-3xl md:text-5xl md:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-white to-white flex items-center gap-2 md:gap-8">
         Objectif futur</h2>
       <p
-        className={"p-10 text-xl relative md:flex-row z-10 md:text-2xl md:leading-tight max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 via-white to-white items-center gap-2 md:gap-8 text-justify"}>
+        className={"sm:p-10 p-4 text-xl relative md:flex-row z-10 md:text-2xl md:leading-tight max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 via-white to-white items-center gap-2 md:gap-8 text-justify"}>
 
         Je souhaite poursuivre des études d'ingénierie pour devenir ingénieur logiciel. Mon objectif est de maîtriser
         les compétences nécessaires pour concevoir des solutions informatiques innovantes et contribuer au progrès

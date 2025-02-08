@@ -1,7 +1,7 @@
 export const cardData = [
   {
     "codeTitle": "Languages",
-    "codeContent": "Proficient in Java, JavaScript, TypeScript, and C. Experienced with PHP.",
+    "codeContent": "Compétent en Java, JavaScript, TypeScript et C. Expérimenté avec PHP",
     "techno": [
       {
         id: 1,
@@ -49,7 +49,7 @@ export const cardData = [
   },
   {
     "codeTitle": "Frontend Technologies",
-    "codeContent": "Proficient in React, TypeScript, modern Tailwindcss for creating responsive web applications, PHP with Symfony and also Java with Primefaces.",
+    "codeContent": "Compétent en React, TypeScript, Tailwindcss moderne pour créer des applications web réactives, PHP avec Symfony et aussi Java avec Primefaces.",
     "techno": [
       {
         id: 4,
@@ -83,7 +83,7 @@ export const cardData = [
   },
   {
     "codeTitle": "Databases",
-    "codeContent": "Experienced with SQL and NoSQL databases, including PostgreSQL, MySQL, and MongoDB.",
+    "codeContent": "Expérimenté avec les bases de données SQL et NoSQL, y compris PostgreSQL, MySQL et MongoDB.",
     "techno": [
       {
         id: 8,
@@ -117,7 +117,7 @@ export const cardData = [
   },
   {
     "codeTitle": "Other Frameworks & Tools",
-    "codeContent": "Familiar with Git, Docker. React, Symfony and Primefaces are my principal frameworks & tools.",
+    "codeContent": "Familiarisé avec Git, Docker. React, Symfony et Primefaces sont mes principaux frameworks et outils.",
     "techno": [
       {
         id: 12,
