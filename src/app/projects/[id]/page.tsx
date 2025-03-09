@@ -4,6 +4,7 @@ import {ArrowLeft, ExternalLink, Github} from 'lucide-react'
 import Link from 'next/link'
 import {findProjectDataById} from '@/data/projects'
 import {Button} from "@/components/ui/button";
+import {Allcompetences} from "@/data/apprentissage";
 
 
 const isValidUrl = (url: string): boolean => {
@@ -29,6 +30,7 @@ export default function ProjectPage({params}: { params: { id: string } }) {
   const nbContributors = project.contributors.length;
   const textContributors = project.contributors.map((contributor) => contributor).join(', ');
 
+  // @ts-ignore
   return (
     <div className="container mx-auto px-4 py-8 flex flex-col text-justify">
       <Link href="/projects" className="inline-flex items-center text-blue-500 hover:text-blue-700 mb-4">
@@ -100,13 +102,13 @@ export default function ProjectPage({params}: { params: { id: string } }) {
       <div
         className={`"grid grid-cols-1 ${project.context && project.idea ? 'md:grid-cols-2' : 'md:grid-cols-1'} gap-8 mb-8"`}>
         {project.context && (
-          <div>
+          <div className={"mb-8"}>
             <h2 className="text-2xl font-semibold mb-4">Context</h2>
             <p className="text-gray-700 dark:text-gray-200">{project.context}</p>
           </div>
         )}
         {project.idea && (
-          <div>
+          <div className={"mb-8"}>
             <h2 className="text-2xl font-semibold mb-4">Genèse de l'idée</h2>
             <p className="text-gray-700 dark:text-gray-200">{project.idea}</p>
           </div>
@@ -207,6 +209,34 @@ export default function ProjectPage({params}: { params: { id: string } }) {
               className="w-full h-auto rounded-lg shadow-2xl depth-effect"
             />
           ))}
+        </div>
+      )}
+      {project.AC && project.AC.length > 0 && (
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-4">
+            Relations entre les réalisations personnelles et le <span> </span>
+            <a href={"/infoAC.pdf"} target="_blank" className="underline">programme</a> de BUT Informatique
+          </h2>
+          <div className="grid grid-cols-1 gap-4">
+            {Allcompetences.filter(comp => project.AC.includes(comp.project)).map(comp => (
+              <div>
+                {project.AC.length > 1 && <div className="text-lg font-semibold mb-8">{comp.project}</div>}
+                <div
+                  key={comp.project}
+                  className={`grid ${comp.competences.length === 1 ? 'grid-cols-1' : comp.competences.length === 2 ? 'grid-cols-2' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'} gap-4`}
+                >
+                  {comp.competences.map((competence, index) => (
+                    <div key={index} className="p-4 border rounded-lg shadow-md">
+                      <p><span className="font-semibold">{competence.AC}</span> : {competence.ACtxt}</p>
+                      <p className="font-semibold">Niveau: {competence.lvl}</p>
+                      <p className="font-semibold">Lien avec le project</p>
+                      <p>{competence.Ex}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       )}
     </div>

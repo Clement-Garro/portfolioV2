@@ -28,6 +28,7 @@ export interface Project {
   history?: string;
   gameplay?: string[];
   experience?: string[];
+  AC?: string[]; //name of the project
 }
 
 export const projectsData: {
@@ -225,6 +226,7 @@ export const projectsData: {
         "Un des défis majeurs a été de modéliser et de gérer les relations complexes entre les entités du projet, comme les relations entre utilisateurs, commentaires, et autres données associées. L’équipe a utilisé les annotations Doctrine pour établir ces relations (OneToMany, ManyToOne, ManyToMany, etc.), tout en veillant à respecter les principes REST. Par exemple, l’utilisation d’identifiants dans les relations et la sérialisation a permis de minimiser la taille des réponses et d’améliorer la lisibilité de l’API.",
         "J'ai pue apprendre à tirer parti des groupes de sérialisation offerts par Symfony pour répondre aux besoins spécifiques des clients. Cette approche a permis de personnaliser les données renvoyées par l’API en fonction des contextes (exemple : un utilisateur authentifié voit plus de détails qu’un utilisateur non authentifié). Par ailleurs, la dénormalisation a été utilisée pour optimiser les performances lors de la récupération de données complexes, notamment dans les scénarios où des requêtes imbriquées étaient nécessaires. Ces techniques ont non seulement amélioré les performances, mais ont également rendu l’API plus adaptable aux besoins des consommateurs front-end."
       ],
+      AC: ["Annuaire", "API REST"]
     },
     {
       id: "gradhire",
@@ -248,6 +250,7 @@ export const projectsData: {
       date: "Septembre 2023 - Décembre 2023",
       context: "L'objectif en cours de ce projet est de concevoir une plateforme web dédiée à la recherche de stages et d'alternances, exclusivement destinée aux étudiants du département informatique de Montpellier.  Pour garantir un accès restreint aux seuls étudiants, professeurs, secrétaires et entreprises souhaitant publier leurs offres sur notre site, nous sommes en train de déployer un système d'authentification basé sur LDAP et de hachage de mots de passe. L'élégance du design et la réactivité de l'interface permet à chacun de naviguer facilement et de tirer le meilleur parti de notre plateforme. De plus, le site propose une gestion efficace des données grâce à une base de données performante et un backend PHP robuste. Cela garantie une utilisation fluide et une réponse rapide.",
       galerie: ["/img/projectImg/gradhire/acceuil.webp", "/img/projectImg/gradhire/dashboard.webp", "/img/projectImg/gradhire/offres.webp"],
+      AC: ["Gradhire"]
     },
     {
       id: "train",
@@ -268,6 +271,7 @@ export const projectsData: {
       date: "Février 2023 - Avril 2023",
       context: "Le projet \"Aventuriers du Rail Autour du Monde\" s'inscrit dans le cadre du développement d'une implémentation en Java du jeu de plateau éponyme. Se concentrant sur le plateau \"Monde\", le projet a été réalisé en plusieurs phases, mettant en œuvre les principes du développement orienté objets et les algorithmes de graphes.",
       galerie: ["/img/projectImg/railihm/start.webp", "/img/projectImg/railihm/selection.webp", "/img/projectImg/railihm/game.webp", "/img/projectImg/railihm/end.webp"],
+      AC: ["Aventuriers du Rail"]
     },
     {
       id: "escape-game",
@@ -287,6 +291,7 @@ export const projectsData: {
       contributors: ["Julien Costa-castro", "Daniil Hirchyts"],
       date: "Novembre 2022 - Décembre 2022",
       context: "Lors de ce passionnant projet, mon équipe et moi nous sommes engagés dans la création d'un site web pour l'Escape Game \"La Grotte Obscure\", suite à la demande d'un autre groupe d'étudiants de l'IUT. Notre mission consistait à répondre à leurs besoins en leur présentant des idées et des concepts de design pour leur site web. Agissant en tant que prestataires, nous avons transformé leur vision en un site interactif qui capturerait l'essence unique de leur escape game. Cette collaboration intergroupe a été une expérience extrêmement enrichissante, d'autant plus que nous étions également clients d'un autre groupe pour notre propre projet de site web pour notre escape game. À travers cette dynamique, nous avons pu échanger des idées et des besoins, contribuant ainsi à la réalisation de deux projets uniques et passionnants.",
+      AC: ["Escape Game"]
     },
     {
       id: "controverse",
@@ -305,7 +310,8 @@ export const projectsData: {
       contributors: ["Julien Costa-castro", "Daniil Hirchyts"],
       date: "Novembre 2022 - Décembre 2022",
       context: "Notre projet est né d'une collaboration palpitante lors de notre première année de cursus en BUT. L'objectif principal était de perfectionner nos compétences en rédaction d'articles tout en nous plongeant dans l'univers de la création de sites web professionnels. Au fil de ce projet, nous avons travaillé main dans la main pour écrire une série d'articles. Chacun de nous a apporté son expertise et ses idées uniques, enrichissant ainsi la diversité et la qualité de notre contenu. Une fois nos écrits achevés, nous avons entrepris la conception du site web qui servirait de vitrine à nos travaux. La mise en place de la navigation, des pages dynamiques et de la section de contact a demandé une collaboration étroite et un travail d'équipe minutieux.",
-      mission: ["Mon rôle spécifique dans ce projet a été la conception et l'implémentation de la section de contact du site web. J'ai veillé à ce qu'elle soit à la fois fonctionnelle et esthétique, afin de créer une interface conviviale permettant aux visiteurs de nous contacter aisément tout en préservant le professionnalisme de notre projet."]
+      mission: ["Mon rôle spécifique dans ce projet a été la conception et l'implémentation de la section de contact du site web. J'ai veillé à ce qu'elle soit à la fois fonctionnelle et esthétique, afin de créer une interface conviviale permettant aux visiteurs de nous contacter aisément tout en préservant le professionnalisme de notre projet."],
+      AC: ["Controverse"]
     }
   ],
   autodidacte: [
