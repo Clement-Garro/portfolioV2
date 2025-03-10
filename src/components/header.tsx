@@ -14,7 +14,7 @@ const Header = () => {
       </div>
       <div className="flex flex-row justify-between sm:justify-normal w-full sm:w-fit">
         <Link className={buttonVariants({variant: "link"})} href={"/"}>Home</Link>
-        {window.innerWidth >= 768 &&
+        {typeof window !== "undefined" && window.innerWidth >= 768 &&
             <Link className={buttonVariants({variant: "link"})} href={"/apprentissage"}>Learning</Link>}
         <Link className={buttonVariants({variant: "link"})} href={"/about"}>About</Link>
         <Link className={buttonVariants({variant: "link"})} href={"/projects"}>Projects</Link>
