@@ -7,6 +7,41 @@ import {Textarea} from "@/components/ui/textarea";
 import {Button} from "@/components/ui/button";
 
 export function Contact() {
+  const handleSubmit = async (event: React.FormEvent) => {
+    event.preventDefault();
+    const form = event.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+
+    const webhookUrl = process.env.DISCORD_WEBHOOK_URL as string | undefined;
+
+    if (!webhookUrl) {
+      console.error('Webhook URL is not defined');
+      alert('Failed to send message.');
+      return;
+    }
+
+    const payload = {
+      content: `**Name:** ${name}\n**Email:** ${email}\n**Message:** ${message}`,
+    };
+
+    try {
+      await fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+      alert('Message sent successfully!');
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('Failed to send message.');
+    }
+  };
+
   return (
     <LampContainer>
       <motion.h1
@@ -25,10 +60,10 @@ export function Contact() {
           </h2>
           <div className="gap-6 flex flex-col">
             <div>
-              <form className="space-y-4 text-black">
-                <Input placeholder="Your Name"/>
-                <Input type="email" placeholder="Your Email"/>
-                <Textarea placeholder="Your Message"/>
+              <form className="space-y-4 text-black" onSubmit={handleSubmit}>
+                <Input name="name" placeholder="Your Name" required/>
+                <Input type="email" name="email" placeholder="Your Email" required/>
+                <Textarea name="message" placeholder="Your Message" required/>
                 <Button type="submit" className="w-full text-base">
                   Envoyer le message
                 </Button>
