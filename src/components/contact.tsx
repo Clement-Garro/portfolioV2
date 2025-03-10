@@ -15,7 +15,10 @@ export function Contact() {
     const email = formData.get('email');
     const message = formData.get('message');
 
-    const webhookUrl = process.env.NEXT_PUBLIC_DISCORD_WEBHOOK_URL || process.env.DISCORD_WEBHOOK_URL as string | undefined;
+    const webhookUrlVercel = process.env.NEXT_PUBLIC_VERCEL_URL;
+    const webhookUrlOther = process.env.DISCORD_WEBHOOK_URL;
+
+    const webhookUrl = webhookUrlVercel || webhookUrlOther;
 
     if (!webhookUrl) {
       console.error('Webhook URL is not defined');
