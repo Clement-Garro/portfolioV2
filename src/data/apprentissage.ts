@@ -1,6 +1,7 @@
 export const Allcompetences = [
   {
     project: "Aventuriers du Rail",
+    link: "/projects/train",
     competences: [
       {
         AC: "CE 1.01",
@@ -84,6 +85,7 @@ export const Allcompetences = [
   },
   {
     project: "Controverse",
+    link: "/projects/controverse",
     competences: [
       {
         AC: "CE 1.01",
@@ -149,6 +151,7 @@ export const Allcompetences = [
   },
   {
     project: "Escape Game",
+    link: "/projects/escape-game",
     competences: [
       {
         AC: "CE 1.01",
@@ -208,6 +211,7 @@ export const Allcompetences = [
   },
   {
     project: "Gradhire",
+    link: "/projects/gradhire",
     competences: [
       {
         AC: "CE 1.01",
@@ -345,6 +349,7 @@ export const Allcompetences = [
   },
   {
     project: "Annuaire",
+    link: "/projects/annuaire",
     competences: [
       {
         AC: "AC 31.01",
@@ -386,6 +391,7 @@ export const Allcompetences = [
   },
   {
     project: "API REST",
+    link: "/projects/annuaire",
     competences: [
       {
         AC: "AC 31.01",

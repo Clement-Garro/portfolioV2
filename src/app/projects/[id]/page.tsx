@@ -4,7 +4,7 @@ import {ArrowLeft, ExternalLink, Github} from 'lucide-react'
 import Link from 'next/link'
 import {findProjectDataById} from '@/data/projects'
 import {Button} from "@/components/ui/button";
-import {Allcompetences} from "@/data/apprentissage";
+import {AllCompetences} from "@/data/learning";
 
 
 const isValidUrl = (url: string): boolean => {
@@ -218,19 +218,24 @@ export default function ProjectPage({params}: { params: { id: string } }) {
             <a href={"/infoAC.pdf"} target="_blank" className="underline">programme</a> de BUT Informatique
           </h2>
           <div className="grid grid-cols-1 gap-4">
-            {Allcompetences.filter(comp => project.AC.includes(comp.project)).map(comp => (
-              <div>
-                {project.AC.length > 1 && <div className="text-lg font-semibold mb-8">{comp.project}</div>}
+            {AllCompetences.map(comp => (
+              <div key={comp.projectName}>
+                <div className="text-lg font-semibold mb-8"><a href={comp.linkProject}>{comp.projectName}</a></div>
                 <div
-                  key={comp.project}
                   className={`grid ${comp.competences.length === 1 ? 'grid-cols-1' : comp.competences.length === 2 ? 'grid-cols-2' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'} gap-4`}
                 >
                   {comp.competences.map((competence, index) => (
-                    <div key={index} className="p-4 border rounded-lg shadow-md">
+                    <div key={index} className="p-4 border rounded-lg shadow-md bg-amber-50">
                       <p><span className="font-semibold">{competence.AC}</span> : {competence.ACtxt}</p>
                       <p className="font-semibold">Niveau: {competence.lvl}</p>
-                      <p className="font-semibold">Lien avec le project</p>
-                      <p>{competence.Ex}</p>
+                      <p className="font-semibold">Lien avec le projet</p>
+                      <p>{competence.why}</p>
+                      {competence.relatedCE.map((ce, ceIndex) => (
+                        <div key={ceIndex} className="mt-4">
+                          <p><span className="font-semibold">{ce.CE}</span> : {ce.CEtxt}</p>
+                          <p>{ce.why}</p>
+                        </div>
+                      ))}
                     </div>
                   ))}
                 </div>
