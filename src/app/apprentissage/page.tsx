@@ -1,5 +1,9 @@
 //affiche toutes les apprentissage critique et les compétences acquises
 import {AllCompetences} from "@/data/learning";
+import {cn} from "@/lib/utils";
+import {buttonVariants} from "@/components/ui/button";
+import {ArrowRight} from "lucide-react";
+import Link from "next/link";
 
 
 export default function Learning() {
@@ -25,8 +29,16 @@ export default function Learning() {
       <div className="grid grid-cols-1 gap-4">
         {/*prendre que les apprentissage de 3eme année donc annuaire et API REST*/}
         {AllCompetences.filter(comp => comp.projectName === "Annuaire" || comp.projectName === "API REST").map(comp => (
-          <div key={comp.projectName}>
-            <div className="text-lg font-semibold mb-8"><a href={comp.linkProject}>{comp.projectName}</a></div>
+          <div key={comp.projectName} className="mb-16">
+            <div className="text-lg font-semibold mb-8 grid grid-cols-2">
+              <h1
+                className="text-xl font-bold tracking-tighter sm:text-2xl md:text-3xl lg:text-4xl/none">{comp.projectName}</h1>
+              <Link className={cn(buttonVariants({variant: "sketch"}), " transition duration-200 cursor-pointer")}
+                    href={comp.linkProject}>
+                Voir le projet
+                <ArrowRight className="ml-2 h-4 w-4"/>
+              </Link>
+            </div>
             <div
               className={`grid ${comp.competences.length === 1 ? 'grid-cols-1' : comp.competences.length === 2 ? 'grid-cols-2' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'} gap-4`}
             >
