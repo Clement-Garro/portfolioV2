@@ -27,7 +27,6 @@ export default function Learning() {
         </div>
       </div>
       <div className="grid grid-cols-1 gap-4">
-        {/*prendre que les apprentissage de 3eme année donc annuaire et API REST*/}
         {AllCompetences.filter(comp => comp.projectName === "Annuaire" || comp.projectName === "API REST").map(comp => (
           <div key={comp.projectName} className="mb-16">
             <div className="text-lg font-semibold mb-8 grid grid-cols-2">

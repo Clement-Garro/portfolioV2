@@ -218,7 +218,7 @@ export default function ProjectPage({params}: { params: { id: string } }) {
             <a href={"/infoAC.pdf"} target="_blank" className="underline">programme</a> de BUT Informatique
           </h2>
           <div className="grid grid-cols-1 gap-4">
-            {AllCompetences.map(comp => (
+            {AllCompetences.filter(comp => project.AC.includes(comp.projectName)).map(comp => (
               <div key={comp.projectName}>
                 <div className="text-lg font-semibold mb-8"><a href={comp.linkProject}>{comp.projectName}</a></div>
                 <div
