@@ -184,6 +184,36 @@ export const projectsData: {
   ],
   school: [
     {
+      id: "autocomplete",
+      title: "IA d'autocomplétion en Scala",
+      description: "Création d'une intelligence artificielle d'autocomplétion capable de prédire les mots suivants à partir d'un texte donné.",
+      longDescription: "Le projet consistait à développer une intelligence artificielle d'autocomplétion en Scala. L'IA s'entraînait sur un dataset textuel pour analyser les relations contextuelles entre les mots. Lorsqu'un utilisateur saisissait un texte, le modèle déterminait dynamiquement le n-gramme approprié en fonction de la longueur de la saisie ou de son contexte, afin d'ajuster son entraînement et améliorer la pertinence des prédictions. Les algorithmes utilisaient des modèles statistiques et probabilistes pour prédire le mot ou la séquence de mots la plus cohérente après la saisie. L'objectif était de garantir des résultats fluides et précis tout en optimisant les performances et la consommation de ressources.",
+      tags: ["Scala", "IA", "Traitement du langage naturel (NLP)", "Machine Learning", "SBT", "Git", "Big Data"],
+      github: "",
+      live: "",
+      videoSrc: "/img/projectImg/autocomplete/demo.png",
+      features: [
+        "Entraînement d'un modèle sur des ensembles de données textuelles personnalisées",
+        "Détermination dynamique des n-grammes en fonction de la saisie utilisateur",
+        "Algorithmes probabilistes pour évaluer la cohérence des prédictions",
+        "Utilisation de Scala et SBT pour une gestion efficace des dépendances",
+        "Optimisation des performances pour traiter des ensembles de données volumineux",
+        "Interface utilisateur simple pour tester les capacités d'autocomplétion",
+        "Documentation technique et exemples d'utilisation"
+      ],
+      contributors: ["Clément Garro", "Giovanni Gozzo"],
+      date: "Mars 2025 - Avril 2025",
+      context: "Ce projet a été réalisé dans le cadre d'une collaboration en binôme pour explorer les capacités de Scala et du Machine Learning dans le traitement du langage naturel (NLP). L'IA a été conçue pour analyser des textes et prédire des mots de manière fluide, en apprenant à partir des relations contextuelles dans un corpus donné. La détermination dynamique des n-grammes a permis d'ajuster l'entraînement pour des prédictions adaptées à chaque contexte utilisateur. Ce projet a permis de consolider nos compétences en apprentissage automatique, en Scala et en manipulation de données.",
+      learning: [
+        "Maîtrise des n-grammes et des modèles probabilistes pour le NLP.",
+        "Développement et débogage d'algorithmes d'apprentissage automatique en Scala.",
+        "Gestion des ensembles de données pour un apprentissage et une prédiction efficaces.",
+        "Optimisation des performances pour une exécution rapide des prédictions.",
+        "Approfondissement de la logique de traitement dynamique basée sur la saisie utilisateur.",
+        "Collaboration et répartition des tâches dans un projet d'équipe."
+      ],
+    },
+    {
       id: "annuaire",
       title: "Annuaire + HAPI trail",
       description: "Conception d'un annuaire pour voir les événements auxquels on participe, automatiquement relié au site des événements via son API",
