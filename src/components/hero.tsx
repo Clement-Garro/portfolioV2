@@ -17,7 +17,7 @@ export default function Hero() {
                   Clément Garro
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Développeur Fullstack Java spécialisé dans le développement d'applications.
+                  Étudiant ingénieur en développement logiciel à l’IMT Mines Alès
                 </p>
               </div>
               <div className="sm:space-x-4 gap-2 items-center justify-center flex flex-col sm:flex-row space-x-0">
