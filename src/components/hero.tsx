@@ -1,10 +1,15 @@
+"use client";
+
 import {buttonVariants} from "@/components/ui/button";
 import {ArrowRight} from 'lucide-react';
 import Link from "next/link";
 import {BackgroundLines} from "@/components/ui/background-lines";
 import {cn} from "@/lib/utils";
+import {useLanguage} from "@/lib/i18n/LanguageContext";
 
 export default function Hero() {
+  const {t} = useLanguage();
+
   return (
     <section className="relative w-full py-12 md:py-24 lg:py-32 xl:py-48 flex justify-center items-center !pt-0">
       <BackgroundLines className={"bg-transparent"}>
@@ -17,18 +22,18 @@ export default function Hero() {
                   Clément Garro
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  Étudiant ingénieur en développement logiciel à l’IMT Mines Alès
+                  {t.hero.subtitle}
                 </p>
               </div>
               <div className="sm:space-x-4 gap-2 items-center justify-center flex flex-col sm:flex-row space-x-0">
                 <Link className={cn(buttonVariants({variant: "sketch"}), " transition duration-200 cursor-pointer ")}
                       href={"/projects"}>
-                  Voir Projets
+                  {t.hero.viewProjects}
                   <ArrowRight className="ml-2 h-4 w-4"/>
                 </Link>
                 <Link className={cn(buttonVariants({variant: "sketch"}), " transition duration-200 cursor-pointer")}
                       href={"/about"}>
-                  À propos de moi
+                  {t.hero.aboutMe}
                   <ArrowRight className="ml-2 h-4 w-4"/>
                 </Link>
               </div>

@@ -1,6 +1,10 @@
+import { projectsEN } from './projects-en';
+
 export const mainProjects = [
   'facile'
 ]
+
+type Locale = "en" | "fr";
 
 export interface Project {
   id: string;
@@ -36,31 +40,67 @@ export const projectsData: {
 } = {
   professional: [
     {
+      id: "esgbu",
+      title: "ESGBU - Ministère de l'Enseignement Supérieur",
+      description: "Contribution au développement d'une application web nationale de gestion de données utilisée par le Ministère de l'Enseignement Supérieur français.",
+      longDescription: "ESGBU est une application web nationale de gestion de données utilisée par le Ministère de l'Enseignement Supérieur français. Dans le cadre de mon alternance en tant qu'ingénieur logiciel au CINES, je contribue au développement continu de cette application, en travaillant sur les composants backend et frontend pour améliorer les fonctionnalités et maintenir le code existant.",
+      tags: ["Symfony", "Angular", "MySQL", "MariaDB", "Elasticsearch", "Mercure", "Git"],
+      github: "",
+      live: "",
+      videoSrc: "/img/projectImg/cines/esgbuHome.png",
+      features: [
+        "Développement backend avec Symfony, MySQL et Mercure",
+        "Développement frontend avec Angular",
+        "Recherche avancée avec Elasticsearch",
+        "Communication temps réel avec Mercure",
+        "Base de données MariaDB",
+        "Déploiement sur environnements dev, pré-prod et production",
+        "Pratiques CI/CD et DevOps",
+      ],
+      contributors: [],
+      date: "Septembre 2025 - Aujourd'hui",
+      context: "Dans le cadre de mon alternance en tant qu'ingénieur logiciel au CINES, je contribue au développement continu d'ESGBU, une application web nationale de gestion de données utilisée par le Ministère de l'Enseignement Supérieur français.",
+      mission: [
+        "- Contribution au développement backend (Symfony, MySQL, Mercure) et frontend (Angular) pour améliorer les fonctionnalités, maintenir le code et supporter les mises à jour de versions à venir.",
+        "- Collaboration avec un autre alternant pour moderniser la stack technique du projet : migration Angular 14→20, Symfony 5.4→6/7, MariaDB, Elasticsearch, Mercure.",
+        "- Participation au débogage, mises à jour des dépendances, installations d'environnements et améliorations des flux de communication entre l'API et Elasticsearch.",
+        "- Support des déploiements sur les environnements de développement, pré-production et production, en suivant les pratiques CI/CD et DevOps existantes."
+      ]
+    },
+    {
       id: "cines",
       title: "F.A.C.I.L.E Cines",
-      description: "Développement et Migration d'une application de verification pour la validité des documents pour un archivage pèrenne au sein de Cines.",
+      description: "Développement, modernisation et migration d'une plateforme d'archivage numérique pour la validation de documents au CINES.",
       longDescription: "F.A.C.I.L.E Cines est une application web développée pour le Centre Informatique National de l'Enseignement Supérieur (CINES) dans le cadre de son projet d'archivage pérenne. L'application permet de vérifier la validité des documents numériques avant leur archivage, en s'assurant qu'ils respectent les normes et standards en vigueur. Elle offre une interface conviviale pour les utilisateurs, avec des fonctionnalités avancées de recherche, de filtrage et de visualisation des résultats. L'application est conçue pour être évolutive et maintenable, facilitant son intégration dans l'infrastructure existante du CINES.",
-      tags: ["Java", "Js", "primefaces", "primeflex", "css", "maven", "docker", "kubernetes"],
+      tags: ["Java", "JEE", "PrimeFaces", "JSF", "Maven", "Tomcat", "Docker", "Kubernetes", "REST API"],
       github: "",
       live: "https://facile.cines.fr",
       videoSrc: "/img/projectImg/cines/cinesHomeNew.webp",
       features: [
-        "Interface utilisateur conviviale et intuitive",
-        "Fonctionnalités avancées de recherche et de filtrage",
-        "Vérification de la validité des documents numériques",
-        "Intégration avec les normes et standards en vigueur",
-        "Convertisseur et correcteur de documents pdf",
-        "Responsive design pour une utilisation sur tous les appareils",
-        "Système de gestion des erreurs pours les tickets",
+        "Validation et correction de documents PDF",
+        "Intégration avec le validateur de format CINES et DROID",
+        "Interface utilisateur moderne avec PrimeFaces et AJAX",
+        "Système de gestion des erreurs et tickets",
+        "Tableaux de bord et pages de correction PDF",
+        "Déploiement sur cluster Kubernetes pour haute disponibilité",
+        "Sécurité renforcée : hardening Docker, correction CVE, configuration Ingress",
       ],
       contributors: [],
-      date: "Avril 2024 - Aujourd'hui",
-      context: "Dans le cadre de mon alternance actuelle au CINES, je travaille sur la finalisation et la modernisation de l’application FACILE, un outil clé pour la validation et l’archivage de documents numériques pour des institutions académiques et de recherche. Mon objectif est de rendre FACILE plus performant, sécurisé, et évolutif pour répondre aux besoins des utilisateurs du CINES.",
+      date: "Juin 2024 - Août 2025",
+      context: "Au sein du CINES, j'ai contribué à la modernisation et migration de FACILE, une plateforme d'archivage numérique. Ce projet s'est déroulé en deux phases : un stage de 3 mois suivi d'une alternance d'un an en tant que développeur logiciel.",
       mission: [
-        "- Migration de FACILE vers Java 11, puis 17 avec une mise à jour complète des dépendances pour améliorer la compatibilité, la stabilité et la sécurité de l’application.",
-        "- Refonte de l’interface utilisateur avec le framework PrimeFaces pour garantir une expérience utilisateur moderne et optimisée.",
-        "- Correction de fuites de mémoire et optimisation du serveur Tomcat pour une accessibilité accrue de l’outil.",
-        "- Pour renforcer la scalabilité et la portabilité de FACILE, je travaille actuellement sur la conteneurisation de l’application avec Docker et son déploiement dans des clusters Kubernetes. Cette approche permet de répondre aux enjeux de charge et de garantir la haute disponibilité du service."
+        "**Stage (Juin 2024 - Sept 2024) :**",
+        "- Modernisation et migration de FACILE vers Java 11 avec mise à jour des configurations serveur (Tomcat, Ghostscript).",
+        "- Amélioration de l'interface web et de l'expérience utilisateur : pages de correction PDF, tableaux de bord, système de tickets.",
+        "- Développement fullstack : frontend (PrimeFaces, AJAX, HTML/CSS) et backend (Java, Maven, REST API).",
+        "- Mise en œuvre des spécifications techniques et fonctionnelles, assurance performance, sécurité et maintenabilité.",
+        "",
+        "**Alternance (Sept 2024 - Août 2025) :**",
+        "- Contribution au développement et à l'optimisation de l'application web FACILE et de son cluster Kubernetes, améliorant la scalabilité et la disponibilité.",
+        "- Amélioration des fonctionnalités principales (validation PDF, correction, impression) et intégration avec le validateur de format CINES et DROID.",
+        "- Développement fullstack avec JEE, PrimeFaces, JSF, Maven, Tomcat et application des bonnes pratiques de sécurité (hardening Docker, corrections CVE, configuration Ingress).",
+        "- Assistance à la gestion de configuration, workflows CI/CD et déploiements automatisés du cluster.",
+        "- Acquisition d'expérience en méthodologie projet, contrôle de version, tests et assurance qualité."
       ]
     },
   ],
@@ -191,7 +231,7 @@ export const projectsData: {
       tags: ["Scala", "IA", "Traitement du langage naturel (NLP)", "Machine Learning", "SBT", "Git", "Big Data"],
       github: "",
       live: "",
-      videoSrc: "/img/projectImg/autocomplete/demo.png",
+      videoSrc: "/img/projectImg/bot/img.png",
       features: [
         "Entraînement d'un modèle sur des ensembles de données textuelles personnalisées",
         "Détermination dynamique des n-grammes en fonction de la saisie utilisateur",
@@ -251,7 +291,7 @@ export const projectsData: {
         "Système de rôles (utilisateurs, organisateurs, administrateurs) pour contrôler les actions disponibles"
       ],
       learning: [
-        "J'ai pue approfondi ma maîtrise de Symfony, un framework PHP réputé pour sa flexibilité et ses outils intégrés, en le combinant avec API Platform. API Platform, grâce à ses fonctionnalités avancées (comme la documentation automatique via Swagger ou l’intégration de GraphQL), a permis de structurer une API REST robuste et respectueuse des standards modernes. Ce processus a également impliqué des réflexions approfondies sur les concepts de REST, tels que la structuration des endpoints, l’utilisation des méthodes HTTP appropriées (GET, POST, PUT, DELETE), et la gestion des codes de réponse HTTP pour une meilleure communication entre le client et le serveur.",
+        "J'ai pue approfondi ma maîtrise de Symfony, un framework PHP réputé pour sa flexibilité et ses outils intégrés, en le combinant avec API Platform. API Platform, grâce à ses fonctionnalités avancées (comme la documentation automatique via Swagger ou l’intégration de GraphQL), a permis de structurer une API REST robuste et respectueuse des standards modernes. Ce processus a également impliqué des réflexions approfondies sur les concepts de REST, tels que la structuration des endpoints, l'utilisation des méthodes HTTP appropriées (GET, POST, PUT, DELETE), et la gestion des codes de réponse HTTP pour une meilleure communication entre le client et le serveur.",
         "La sécurisation de l’authentification a été un axe majeur du projet. En implémentant les JSON Web Tokens (JWT), l’équipe a garanti une gestion sécurisée et scalable des sessions utilisateurs. Ce choix a permis d’éviter les failles liées aux approches traditionnelles basées sur les cookies ou les sessions serveur. De plus, le JWT offre des avantages significatifs, notamment la possibilité de stocker des informations codées directement dans le token (claims), ce qui optimise la vérification des droits d’accès. L’équipe a également travaillé sur l’intégration de tokens de rafraîchissement pour offrir une expérience utilisateur fluide tout en maintenant un haut niveau de sécurité.",
         "Un des défis majeurs a été de modéliser et de gérer les relations complexes entre les entités du projet, comme les relations entre utilisateurs, commentaires, et autres données associées. L’équipe a utilisé les annotations Doctrine pour établir ces relations (OneToMany, ManyToOne, ManyToMany, etc.), tout en veillant à respecter les principes REST. Par exemple, l’utilisation d’identifiants dans les relations et la sérialisation a permis de minimiser la taille des réponses et d’améliorer la lisibilité de l’API.",
         "J'ai pue apprendre à tirer parti des groupes de sérialisation offerts par Symfony pour répondre aux besoins spécifiques des clients. Cette approche a permis de personnaliser les données renvoyées par l’API en fonction des contextes (exemple : un utilisateur authentifié voit plus de détails qu’un utilisateur non authentifié). Par ailleurs, la dénormalisation a été utilisée pour optimiser les performances lors de la récupération de données complexes, notamment dans les scénarios où des requêtes imbriquées étaient nécessaires. Ces techniques ont non seulement amélioré les performances, mais ont également rendu l’API plus adaptable aux besoins des consommateurs front-end."
@@ -454,3 +494,38 @@ export function findProjectDataById(id: string): Project | undefined {
   const allProjects = [...projectsData.professional, ...projectsData.personal, ...projectsData.school, ...projectsData.autodidacte];
   return allProjects.find((project) => project.id === id);
 }
+
+// Function to get localized project data
+export function getLocalizedProjects(locale: Locale): typeof projectsData {
+  if (locale === "en") {
+    // Merge English translations with base project data
+    const localizedData = {
+      professional: projectsData.professional.map((project) => {
+        const enProject = projectsEN.professional.find((p) => p.id === project.id);
+        return enProject ? { ...project, ...enProject } : project;
+      }),
+      personal: projectsData.personal.map((project) => {
+        const enProject = projectsEN.personal.find((p) => p.id === project.id);
+        return enProject ? { ...project, ...enProject } : project;
+      }),
+      school: projectsData.school.map((project) => {
+        const enProject = projectsEN.school.find((p) => p.id === project.id);
+        return enProject ? { ...project, ...enProject } : project;
+      }),
+      autodidacte: projectsData.autodidacte.map((project) => {
+        const enProject = projectsEN.autodidacte.find((p) => p.id === project.id);
+        return enProject ? { ...project, ...enProject } : project;
+      }),
+    };
+    return localizedData;
+  }
+  return projectsData;
+}
+
+// Function to find a localized project by ID
+export function findLocalizedProjectById(id: string, locale: Locale): Project | undefined {
+  const localizedData = getLocalizedProjects(locale);
+  const allProjects = [...localizedData.professional, ...localizedData.personal, ...localizedData.school, ...localizedData.autodidacte];
+  return allProjects.find((project) => project.id === id);
+}
+
