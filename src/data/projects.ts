@@ -46,7 +46,7 @@ export const projectsData: {
       longDescription: "ESGBU est une application web nationale de gestion de données utilisée par le Ministère de l'Enseignement Supérieur français. Dans le cadre de mon alternance en tant qu'ingénieur logiciel au CINES, je contribue au développement continu de cette application, en travaillant sur les composants backend et frontend pour améliorer les fonctionnalités et maintenir le code existant.",
       tags: ["Symfony", "Angular", "MySQL", "MariaDB", "Elasticsearch", "Mercure", "Git"],
       github: "",
-      live: "",
+      live: "https://esgbu.esr.gouv.fr",
       videoSrc: "/img/projectImg/cines/esgbuHome.png",
       features: [
         "Développement backend avec Symfony, MySQL et Mercure",
