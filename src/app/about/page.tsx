@@ -66,24 +66,28 @@ export default function About() {
         className={"sm:p-10 p-4 text-xl relative md:flex-row z-10 md:text-2xl md:leading-tight max-w-5xl mx-auto tracking-tight font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-500 via-white to-white items-center gap-2 md:gap-8 text-justify"}>
         Mon enthousiasme pour la technologie m'a naturellement conduit à explorer l'informatique, que ce soit pour
         <strong>monter mes propres ordinateurs</strong> ou pour <strong>maîtriser plusieurs langages de
-        programmation</strong>. En
+        programmation</strong>. Je suis également très attiré par <strong>l'intelligence artificielle</strong>, car elle
+        est vouée à révolutionner le monde dans tous les sens du terme, ainsi que par les sciences physiques, l'étude
+        des étoiles et de leur fonctionnement, et le <strong>monde quantique</strong>, qui me fascine : à un niveau si
+        petit de la matière, les règles de la physique changent radicalement et semblent défier toute logique. En
         parallèle, ma
         fascination pour la <strong>culture japonaise, les jeux vidéo et le sport</strong> enrichit mon quotidien et me
-        permet de
-        cultiver une curiosité sans cesse renouvelée. De plus, ma passion pour <strong>la cuisine</strong> me pousse à
-        expérimenter de
-        nouvelles recettes et à découvrir les saveurs du monde, ajoutant ainsi une dimension créative à ma
+        permet de cultiver une curiosité sans cesse renouvelée. De plus, ma passion pour <strong>la cuisine</strong> me
+        pousse à
+        expérimenter de nouvelles recettes et à découvrir les saveurs du monde, ajoutant ainsi une dimension créative à
+        ma
         vie.<br/><br/>
 
         Je pratique le <strong>volley-ball</strong> depuis mon entrée au collège, ce qui me permet de développer des
-        compétences
-        essentielles telles que <strong>la communication, la coordination et la concentration</strong>. En pratiquant ce
-        sport,
-        j'apprends <strong>l'importance du travail d'équipe et de la persévérance</strong>, des valeurs qui se reflètent
-        également dans
-        ma vie professionnelle et personnelle. Cela m'offre un environnement stimulant où je peux me surpasser et
+        compétences essentielles telles que <strong>la communication, la coordination et la concentration</strong>. En
+        pratiquant ce
+        sport, j'apprends <strong>l'importance du travail d'équipe et de la persévérance</strong>, des valeurs qui se
+        reflètent
+        également dans ma vie professionnelle et personnelle. Cela m'offre un environnement stimulant où je peux me
+        surpasser et
         relever de nouveaux défis, ce qui contribue à mon développement personnel et à mon épanouissement. Depuis peu,
-        je me suis passionné par le snowboard, deux sports qui me permettent de me dépasser et de me ressourcer.
+        je me suis passionné par le <strong>snowboard</strong>, un sport qui me permet de me dépasser et de me
+        ressourcer.
       </p>
 
 
