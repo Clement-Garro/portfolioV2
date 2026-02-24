@@ -5,8 +5,11 @@ import {LampContainer} from "@/components/ui/lamp";
 import {Input} from "@/components/ui/input";
 import {Textarea} from "@/components/ui/textarea";
 import {Button} from "@/components/ui/button";
+import {useLanguage} from "@/lib/i18n/LanguageContext";
 
 export function Contact() {
+  const {t} = useLanguage();
+
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
     const form = event.target as HTMLFormElement;
@@ -15,33 +18,25 @@ export function Contact() {
     const email = formData.get('email');
     const message = formData.get('message');
 
-    const webhookUrlVercel = process.env.NEXT_PUBLIC_VERCEL_URL;
-    const webhookUrlOther = process.env.DISCORD_WEBHOOK_URL;
-
-    const webhookUrl = webhookUrlVercel || webhookUrlOther;
-
-    if (!webhookUrl) {
-      console.error('Webhook URL is not defined');
-      alert('Failed to send message.');
-      return;
-    }
-
-    const payload = {
-      content: `**Name:** ${name}\n**Email:** ${email}\n**Message:** ${message}`,
-    };
-
     try {
-      await fetch(webhookUrl, {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(payload),
+        body: JSON.stringify({ name, email, message }),
       });
-      alert('Message sent successfully!');
+
+      if (response.ok) {
+        alert(t.contact.messageSent);
+        form.reset();
+      } else {
+        console.error('Error:', response.status, response.statusText);
+        alert(t.contact.messageFailed);
+      }
     } catch (error) {
       console.error('Error sending message:', error);
-      alert('Failed to send message.');
+      alert(t.contact.messageFailed);
     }
   };
 
@@ -59,16 +54,16 @@ export function Contact() {
       >
         <div className="container px-4 md:px-6 flex-col flex max-w-screen">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-white">
-            Contactez-nous
+            {t.contact.title}
           </h2>
           <div className="gap-6 flex flex-col">
             <div>
               <form className="space-y-4 text-black" onSubmit={handleSubmit}>
-                <Input name="name" placeholder="Your Name" required/>
-                <Input type="email" name="email" placeholder="Your Email" required/>
-                <Textarea name="message" placeholder="Your Message" required/>
+                <Input name="name" placeholder={t.contact.yourName} required/>
+                <Input type="email" name="email" placeholder={t.contact.yourEmail} required/>
+                <Textarea name="message" placeholder={t.contact.yourMessage} required/>
                 <Button type="submit" className="w-full text-base">
-                  Envoyer le message
+                  {t.contact.sendMessage}
                 </Button>
               </form>
             </div>

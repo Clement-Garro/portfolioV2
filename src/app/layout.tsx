@@ -4,6 +4,7 @@ import React from "react";
 import Header from "@/components/header";
 import {GeistSans} from "geist/font/sans";
 import {Footer} from "@/components/Footer";
+import {LanguageProvider} from "@/lib/i18n/LanguageContext";
 
 export const metadata: Metadata = {
   title: 'Clément Garro - Fullstack Java Developer',
@@ -20,9 +21,11 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${GeistSans.className} antialiased h-full`}
     >
-    <Header/>
-    {children}
-    <Footer/>
+    <LanguageProvider>
+      <Header/>
+      {children}
+      <Footer/>
+    </LanguageProvider>
     </body>
     </html>
   );
