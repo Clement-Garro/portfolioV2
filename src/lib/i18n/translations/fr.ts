@@ -1,4 +1,4 @@
-import { Translations } from "./en";
+import {Translations} from "./en";
 
 export const fr: Translations = {
   nav: {
@@ -52,7 +52,7 @@ export const fr: Translations = {
     personalityTraits: "Traits de personnalité",
     personalityText: "Ma {words}, me permettent d'aborder chaque projet avec méthode et détermination. Autonome et proactif, je m'adapte rapidement aux nouveaux environnements de travail. Mon sens du relationnel et mon esprit d'équipe favorisent une collaboration efficace et contribuent à l'atteinte des objectifs collectifs.",
     whatILike: "Centres d'intérêt",
-    whatILikeText1: "Ma passion pour la technologie m'a naturellement orienté vers l'informatique, du montage de configurations matérielles à la maîtrise de multiples langages de programmation. En parallèle, je cultive un intérêt marqué pour la culture japonaise, les jeux vidéo et le sport, qui nourrissent ma créativité et mon ouverture d'esprit. La cuisine représente également un exutoire créatif où j'aime expérimenter et découvrir de nouvelles saveurs.",
+    whatILikeText1: "Ma passion pour la technologie m'a naturellement orienté vers l'informatique, du montage de configurations matérielles à la maîtrise de multiples langages de programmation. Je suis également très attiré par l'intelligence artificielle, destinée à révolutionner le monde dans tous les sens du terme, ainsi que par les sciences physiques, l'étude des étoiles et le monde quantique, qui me fascine par ses règles radicalement différentes et défiant la logique. En parallèle, je cultive un intérêt marqué pour la culture japonaise, les jeux vidéo et le sport, qui nourrissent ma créativité et mon ouverture d'esprit. La cuisine représente également un exutoire créatif où j'aime expérimenter et découvrir de nouvelles saveurs.",
     whatILikeText2: "La pratique du volley-ball depuis le collège m'a permis de développer des compétences transversales essentielles : communication, coordination et concentration. Ce sport m'a inculqué les valeurs du travail d'équipe et de la persévérance, que j'applique au quotidien dans mes projets professionnels. Récemment, j'ai également découvert le snowboard, une discipline qui me permet de me dépasser et de maintenir un équilibre personnel.",
     capabilities: "Compétences clés",
     capabilitiesText1: "Mon parcours académique et mes projets personnels m'ont permis d'acquérir une vision globale du développement logiciel. J'adopte une approche méthodique dans la conception de solutions, en analysant systématiquement les différentes options et en anticipant les contraintes techniques avant de m'engager dans l'implémentation.",
